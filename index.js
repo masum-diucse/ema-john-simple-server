@@ -56,6 +56,11 @@ client.connect(err => {
           res.send(documents);
       })
   })
+
+  app.get('/',(req,res)=>{
+      res.send("Hello from db working!!")
+  })
+
  console.log("Db connected successfully")
 });
 
